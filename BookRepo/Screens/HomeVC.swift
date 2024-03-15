@@ -14,7 +14,7 @@ class HomeVC: UIViewController {
         view.backgroundColor = .systemPink
         
         Task {
-            try await NetworkManager.shared.getTrending()
+            print(try await NetworkManager.shared.getTrending())
         }
     }
 
